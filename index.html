@@ -2,32 +2,33 @@
 
 <html lang="en">
     <head>
+        <title>Calculator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="script.js">
     </head>
     <body>
         <main>
-            <div class="grid grid-cols-4 gap-4 border border-black w-1/2 h-1/2 mx-auto">
-                <input class="rounded col-span-3" type="text">
-                <button class="rounded bg-green-500">c</button>
-                <button class="rounded bg-green-500">1</button>
-                <button class="rounded bg-green-500">2</button>
-                <button class="rounded bg-green-500">3</button>
-                <button class="rounded bg-green-500">/</button>
-                <button class="rounded bg-green-500">4</button>
-                <button class="rounded bg-green-500">5</button>
-                <button class="rounded bg-green-500">6</button>
-                <button class="rounded bg-green-500">*</button>
-                <button class="rounded bg-green-500">7</button>
-                <button class="rounded bg-green-500">8</button>
-                <button class="rounded bg-green-500">9</button>
-                <button class="rounded bg-green-500">-</button>
-                <button class="rounded bg-green-500">0</button>
-                <button class="rounded bg-green-500">.</button>
-                <button class="rounded bg-green-500">=</button>
-                <button class="rounded bg-green-500">+</button>
+            <div class="grid grid-cols-4 gap-4 border border-black w-96 h-96 mx-auto p-2 shadown-xl mt-20">
+                <input class="rounded col-span-3 border border-solid border-black" id="screen">
+                <button class="rounded-sm bg-green-500"onclick="document.getElementById('screen').value = ''">clear</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '1'">1</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '2'">2</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '3'">3</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '/'">/</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '4'">4</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '5'">5</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '6'">6</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '*'">*</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '7'">7</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '8'">8</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '9'">9</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '-'">-</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '0'">0</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '.'">.</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '='">=</button>
+                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value = '+'">+</button>
             </div>
         </main>
     </body>
