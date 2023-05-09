@@ -9,17 +9,20 @@
         <link rel="stylesheet" href="script.js">
         <script>
                 function solve() {
-                let inputbox=document.getElementById('screen').value;
-                let answer = eval(inputbox) ;
-                document.getElemntById('screen').value = answer ;
-            }
+                    let inputbox = document.getElementById('screen').value;
+                    let answer = eval(inputbox) ;
+                    document.getElementById('screen').value = answer ;
+                 }
+                function clearscrn() {
+                    document.getElementById('screen').value = "" ;
+                }
         </script>
     </head>
     <body>
         <main>
             <div class="grid grid-cols-4 gap-4 border border-black w-96 h-96 mx-auto p-2 shadown-xl mt-20">
                 <input class="rounded col-span-3 border border-solid border-black" id="screen">
-                <button class="rounded-sm bg-green-500"onclick="document.getElementById('screen').value = ''">clear</button>
+                <button class="rounded-sm bg-green-500"onclick="clearscrn()">clear</button>
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '1'">1</button>
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '2'">2</button>
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '3'">3</button>
@@ -34,7 +37,7 @@
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '-'">-</button>
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '0'">0</button>
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '.'">.</button>
-                <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '='">=</button>
+                <button class="rounded bg-green-500" onclick="solve()">=</button>
                 <button class="rounded bg-green-500"onclick="document.getElementById('screen').value += '+'">+</button>
             </div>
 
